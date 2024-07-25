@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <style>
+      .swiper-container {
+        margin-inline: 14rem;
+      }
+
+      .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .swiper-button-prev::after,
+      .swiper-button-next::after {
+        font-size: 24px;
+        color: white;
+      }
+
+      .swiper-button-prev,
+      .swiper-button-next {
+        border-radius: 50%;
+        border: 1px solid rgb(80, 79, 79);
+        width: 40px;
+        height: 40px;
+      }
+
+      .swiper-pagination {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 10px;
+        border-radius: 10px;
+        border: 1px solid #1a1a1a;
+        transform: translateX(32rem);
+      }
+
+      .swiper-horizontal > .swiper-pagination-bullets,
+      .swiper-pagination-bullets.swiper-pagination-horizontal,
+      .swiper-pagination-custom,
+      .swiper-pagination-fraction {
+        /* left: 0; */
+        width: 5rem;
+      }
+
+      .swiper-pagination-bullet {
+        background: #8f8f8f;
+        padding: 0.3rem;
+      }
+
+      .swiper-pagination-bullet-active {
+        background: white;
+      }
+    </style>
+    <nav
+      class="top-0 z-50 sticky md:flex justify-between items-center hidden bg-white px-16 py-5 border-b"
+    >
+      <div class="flex items-center gap-6">
+        <h1 class="flex justify-center items-end font-bold text-[1.5rem]">
+          S
+          <p class="relative top-[.1rem] rotate-180">V</p>
+          MSUNG
+        </h1>
+        <ul class="flex gap-2">
+          <li>AI</li>
+          <li>Mobile</li>
+          <li>TV & AV</li>
+          <li>Home Appliance</li>
+          <li>IT</li>
+          <li>Offers</li>
+        </ul>
+      </div>
+      <div class="flex items-center gap-5">
+        <ul class="flex gap-2">
+          <li>Support</li>
+          <li>For Business</li>
+        </ul>
+        <div>
+          <i>s</i>
+          <i>p</i>
+        </div>
+      </div>
+    </nav>
+    <nav
+      class="top-0 sticky flex items-center md:hidden bg-white px-5 py-5 border-b text-center"
+    >
+      <div class="flex justify-between items-center gap-[12rem]">
+        <h1 class="flex justify-center items-end font-bold text-[1.5rem]">
+          S
+          <p class="relative top-[.1rem] rotate-180">V</p>
+          MSUNG
+        </h1>
+        <button>menu</button>
+        <ul
+          class="top-20 left-0 absolute flex flex-col gap-2 bg-white shadow-md w-[10rem]"
+        >
+          <li>AI</li>
+          <li>Mobile</li>
+          <li>TV & AV</li>
+          <li>Home Appliance</li>
+          <li>IT</li>
+          <li>Offers</li>
+          <li>Support</li>
+          <li>For Business</li>
+        </ul>
+      </div>
+    </nav>
+  </head>
+  <body>
+    <section>
+      <div
+        class="flex justify-start items-start gap-5 bg-hero-pattern bg-cover xs:bg-center bg-right px-10 py-52 w-full h-[48rem]"
+      >
+        <div>
+          <h1 class="font-semibold text-[4rem] text-white">Galaxy S23 Ultra</h1>
+          <img
+            src="../../assets/galaxy-s23-ultra-highlights-kv-ai-text.webp"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <section class="flex flex-col justify-center gap-20 bg-black">
+      <div class="flex justify-center items-center gap-16">
+        <h1 class="flex items-start w-[35rem] font-bold text-[6rem] text-white">
+          Galaxy AI is here
+          <img
+            src="../../assets/intelligence_title.webp"
+            class="relative top-10 -left-10 h-[5rem]"
+            alt=""
+          />
+        </h1>
+        <div class="flex flex-col gap-4">
+          <p class="w-[30rem] font-medium text-[18px] text-white">
+            Welcome to the era of mobile AI. With Galaxy S23 Ultra in your
+            hands, you can unleash whole new levels of creativity, productivity
+            and possibility —starting with the most important device in your
+            life. Your smartphone.
+          </p>
+          <p class="font-bold text-[18px] text-white">Epic, just like that.</p>
+        </div>
+      </div>
+`
+      <div class="relative h-[45rem] overflow-x-hidden swiper-container">
+        <div class="flex w-[50rem] h-max swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="flex flex-col gap-5 w-[30rem] text-region text-white">
+              <p class="flex items-center gap-2">
+                <img
+                  src="../../assets/intelligence_title.webp"
+                  class="h-5"
+                  alt=""
+                />
+                PHOTO ASSIST
+              </p>
+              <h1 class="font-semibold text-[3rem]">
+                Resize it, retouch it. Just like that
+              </h1>
+              <p class="text-[1.2rem]">
+                New AI editing options let you get the photo you wanted, letting
+                you relocate objects and intelligently fill in the space they
+                left behind.<sup>4</sup>
+              </p>
+              <p class="text-[#999999]">
+                *Image simulated for illustrative purposes. Actual UI may be
+                different.
+              </p>
+              <div
+                class="flex justify-center items-center bg-gray-800 rounded-lg w-64 h-24"
+              >
+                <div class="flex items-center gap-2">
+                  <div class="bg-white rounded-full w-4 h-4"></div>
+                  <span>How to use Photo Assist</span>
+                </div>
+              </div>
+            </div>
+            <div class="video-region">
+              <video
+                class="rounded-lg"
+                src="../../assets/galaxy-s23-ultra-highlights-overview-photo-assist.webm"
+                autoplay
+              ></video>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flex flex-col gap-5 w-[30rem] text-region text-white">
+              <p class="flex items-center gap-2">
+                <img
+                  src="../../assets/intelligence_title.webp"
+                  class="h-5"
+                  alt=""
+                />
+                CIRCLE TO SEARCH
+              </p>
+              <h1 class="font-semibold text-[3rem]">
+                Circle it, find it. just like that
+              </h1>
+              <p class="text-[1.2rem]">
+                Search like never before with Circle to
+                Search.<sup>1</sup>Simply trace an object to get Google Search
+                results. No typing required.
+              </p>
+              <p class="text-[#999999]">
+                *Image simulated for illustrative purposes. Actual UI may be
+                different.
+              </p>
+              <div class="bg-gray-800 rounded-lg w-64 h-24"></div>
+            </div>
+            <div class="video-region">
+              <video
+                src="../../assets/galaxy-s23-ultra-highlights-overview-live-translate.webm"
+                autoplay
+              ></video>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flex flex-col gap-5 w-[30rem] text-region text-white">
+              <p class="flex items-center gap-2">
+                <img
+                  src="../../assets/intelligence_title.webp"
+                  class="h-5"
+                  alt=""
+                />
+                CIRCLE TO SEARCH
+              </p>
+              <h1 class="font-semibold text-[3rem]">
+                Circle it, find it. just like that
+              </h1>
+              <p class="text-[1.2rem]">
+                Search like never before with Circle to
+                Search.<sup>1</sup>Simply trace an object to get Google Search
+                results. No typing required.
+              </p>
+              <p class="text-[#999999]">
+                *Image simulated for illustrative purposes. Actual UI may be
+                different.
+              </p>
+              <div class="bg-gray-800 rounded-lg w-64 h-24"></div>
+            </div>
+            <div class="video-region">
+              <video
+                class="rounded-lg"
+                src="../../assets/galaxy-s23-ultra-highlights-overview-interpreter.webm"
+                autoplay
+              ></video>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flex flex-col gap-5 w-[30rem] text-region text-white">
+              <p class="flex items-center gap-2">
+                <img
+                  src="../../assets/intelligence_title.webp"
+                  class="h-5"
+                  alt=""
+                />
+                CIRCLE TO SEARCH
+              </p>
+              <h1 class="font-semibold text-[3rem]">
+                Circle it, find it. just like that
+              </h1>
+              <p class="text-[1.2rem]">
+                Search like never before with Circle to
+                Search.<sup>1</sup>Simply trace an object to get Google Search
+                results. No typing required.
+              </p>
+              <p class="text-[#999999]">
+                *Image simulated for illustrative purposes. Actual UI may be
+                different.
+              </p>
+              <div class="bg-gray-800 rounded-lg w-64 h-24"></div>
+            </div>
+            <div class="video-region">
+              <video
+                class="rounded-lg"
+                src="../../assets/galaxy-s23-ultra-highlights-overview-photo-assist.webm"
+                autoplay
+              ></video>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
+    <!-- <section class="bg-black w-full">
+      <video class="samsung-scroll-view-video-player" src="../../assets/galaxy-s23-ultra-highlights-design.webm"></video>
+    </section> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../js/swiper.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
